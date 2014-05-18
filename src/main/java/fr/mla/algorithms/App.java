@@ -4,11 +4,7 @@ import edu.princeton.StdRandom;
 import fr.mla.algorithms.sort.AbstractSortAlgorithm;
 import fr.mla.algorithms.sort.SelectionSortAlgorithm;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
     public static void main( String[] args )
     {
