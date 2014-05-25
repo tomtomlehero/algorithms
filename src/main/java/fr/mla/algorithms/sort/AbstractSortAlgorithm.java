@@ -37,5 +37,10 @@ public abstract class AbstractSortAlgorithm {
 
     }
 
+    public static Comparable[] arraycopy(Comparable a[]) {
+        Comparable b[] = new Comparable[a.length];
+        System.arraycopy(a, 0, b, 0, a.length);
+        return b;
+    }
 
 }
