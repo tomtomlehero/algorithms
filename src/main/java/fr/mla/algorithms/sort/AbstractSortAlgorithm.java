@@ -1,5 +1,8 @@
 package fr.mla.algorithms.sort;
 
+import edu.princeton.StdOut;
+import edu.princeton.StdRandom;
+
 /**
  * Created by mathieu on 18/05/2014.
  */
@@ -20,9 +23,19 @@ public abstract class AbstractSortAlgorithm {
     public static void show(Comparable a[]) {
         System.out.print("[ ");
         for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
+            StdOut.print(a[i] + " ");
         }
-        System.out.println("]");
+        StdOut.println("]");
     }
+
+    public static Integer[] randomIntegerArray(int length, int range) {
+        Integer[] a = new Integer[length];
+        for (int i = 0; i < length; i++) {
+            a[i] = StdRandom.uniform(range);
+        }
+        return a;
+
+    }
+
 
 }
